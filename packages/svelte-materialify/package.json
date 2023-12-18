@@ -18,7 +18,8 @@
     "check": "svelte-check --workspace src/components",
     "prepublishOnly": "concurrently \"yarn:build:js\" \"yarn:build:minimal\"",
     "test": "jest",
-    "version": "standard-changelog && git add CHANGELOG.md"
+    "version": "standard-changelog && git add CHANGELOG.md",
+    "postinstall":"npm run build:js"
   },
   "files": [
     "@types",
